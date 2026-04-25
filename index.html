@@ -26,7 +26,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 15px; line-height: 1.7; }
-
+ 
   /* Header */
   .header {
     background: linear-gradient(135deg, #0d1b2e 0%, #0a0e1a 60%);
@@ -51,7 +51,7 @@
   .header h1 span { color: var(--accent); }
   .header-meta { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12px; color: var(--text-muted); font-family: var(--mono); margin-top: 10px; }
   .header-meta span { background: var(--surface2); border: 1px solid var(--border); padding: 3px 10px; border-radius: 4px; }
-
+ 
   /* Nav */
   .toc { background: var(--surface); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
   .toc-inner { max-width: 960px; margin: 0 auto; padding: 0 16px; display: flex; flex-direction: column; }
@@ -68,24 +68,24 @@
   .toc-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
   .toc-btn.tbd { color: #4a5568; }
   .toc-btn.tbd.active { color: var(--purple); border-bottom-color: var(--purple); }
-
+ 
   /* Main */
   .main { max-width: 960px; margin: 0 auto; padding: 28px 24px 80px; }
-
+ 
   /* Progress */
   .progress-bar { height: 3px; background: var(--border); margin-bottom: 24px; border-radius: 2px; overflow: hidden; }
   .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #3b82f6); border-radius: 2px; transition: width 0.4s ease; }
-
+ 
   /* Section */
   .section { display: none; animation: fadeIn 0.3s ease; }
   .section.active { display: block; }
   @keyframes fadeIn { from { opacity:0; transform: translateY(8px); } to { opacity:1; transform: translateY(0); } }
-
+ 
   .section-header { display: flex; align-items: center; gap: 14px; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
   .section-icon { width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
   .section-header h2 { font-size: 18px; font-weight: 700; }
   .section-header p { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
-
+ 
   /* Steps */
   .steps { display: flex; flex-direction: column; gap: 12px; }
   .step { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: border-color 0.2s; }
@@ -98,11 +98,11 @@
   .step-body { display: none; padding: 0 18px 18px; border-top: 1px solid var(--border); }
   .step.open .step-body { display: block; }
   .step-body > p { color: var(--text-dim); font-size: 13px; margin-top: 12px; }
-
+ 
   .sub-steps { margin-top: 12px; display: flex; flex-direction: column; gap: 7px; }
   .sub-step { background: var(--surface2); border-radius: 7px; padding: 9px 12px; font-size: 13px; color: var(--text-dim); display: flex; gap: 10px; }
   .sub-step::before { content: '→'; color: var(--accent); flex-shrink: 0; }
-
+ 
   .box { border-radius: 9px; padding: 12px 14px; font-size: 13px; margin-top: 12px; display: flex; gap: 10px; }
   .box-icon { font-size: 15px; flex-shrink: 0; line-height: 1.7; }
   .box p { color: var(--text-dim); line-height: 1.6; }
@@ -110,9 +110,9 @@
   .box.tip  { background: rgba(16,185,129,0.08); border: 1px solid rgba(16,185,129,0.25); }
   .box.info { background: rgba(59,130,246,0.08); border: 1px solid rgba(59,130,246,0.25); }
   .box.note { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); }
-
+ 
   code { font-family: var(--mono); background: rgba(246,133,27,0.1); color: var(--accent2); padding: 1px 6px; border-radius: 4px; font-size: 12px; }
-
+ 
   /* CEX route cards */
   .cex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 16px; }
   .cex-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
@@ -122,7 +122,7 @@
   .badge-erc { background: rgba(239,68,68,0.12); color: #f87171; border: 1px solid rgba(239,68,68,0.25); }
   .cex-route { font-size: 12px; color: var(--text-muted); line-height: 1.8; }
   .cex-route .arrow { color: var(--accent); margin: 0 4px; }
-
+ 
   /* Flow diagram */
   .flow { display: flex; flex-direction: column; gap: 0; margin: 16px 0; }
   .flow-node { display: flex; align-items: center; gap: 12px; }
@@ -134,14 +134,14 @@
   .flow-box p { font-size: 12px; color: var(--text-muted); }
   .flow-arrow { display: flex; align-items: center; justify-content: center; padding: 4px 0; color: var(--accent); font-size: 18px; flex-shrink: 0; margin-left: 20px; }
   .flow-note { font-size: 11px; color: var(--text-muted); font-family: var(--mono); }
-
+ 
   /* Network table */
   .net-table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13px; }
   .net-table th { background: var(--surface2); color: var(--text-muted); font-weight: 500; text-align: left; padding: 9px 12px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
   .net-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
   .net-table tr:last-child td { border-bottom: none; }
   .net-table td:first-child { color: var(--text); font-weight: 500; }
-
+ 
   /* Security */
   .sec-list { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
   .sec-item { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; gap: 12px; }
@@ -151,7 +151,7 @@
   .badge-med      { background: rgba(59,130,246,0.15); color: #60a5fa; border: 1px solid rgba(59,130,246,0.3); }
   .sec-content h4 { font-size: 13px; font-weight: 600; margin-bottom: 3px; }
   .sec-content p  { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
-
+ 
   /* TBD sections */
   .tbd-banner {
     background: linear-gradient(135deg, rgba(168,85,247,0.06), rgba(59,130,246,0.06));
@@ -166,7 +166,7 @@
   .tbd-banner .tbd-icon { font-size: 24px; flex-shrink: 0; }
   .tbd-banner h3 { font-size: 15px; font-weight: 700; color: var(--purple); margin-bottom: 4px; }
   .tbd-banner p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
-
+ 
   .tbd-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; margin-top: 16px; }
   .tbd-card {
     background: var(--surface);
@@ -186,13 +186,13 @@
   .tbd-card ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
   .tbd-card ul li { font-size: 12px; color: var(--text-muted); display: flex; gap: 6px; }
   .tbd-card ul li::before { content: '·'; color: rgba(168,85,247,0.5); }
-
+ 
   /* Glossary */
   .glossary { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; margin-top: 16px; }
   .glo-item { background: var(--surface); border: 1px solid var(--border); border-radius: 9px; padding: 12px 14px; }
   .glo-item h4 { font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 3px; }
   .glo-item p  { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
-
+ 
   /* Tab within section */
   .tab-bar { display: flex; gap: 4px; margin-bottom: 16px; }
   .tab-btn { padding: 7px 16px; border-radius: 6px; border: 1px solid var(--border); background: none; color: var(--text-muted); font-family: var(--sans); font-size: 13px; cursor: pointer; transition: all 0.2s; }
@@ -200,7 +200,7 @@
   .tab-btn.active { background: rgba(246,133,27,0.12); border-color: var(--accent); color: var(--accent); }
   .tab-content { display: none; }
   .tab-content.active { display: block; }
-
+ 
   @media (max-width: 600px) {
     .header { padding: 24px 16px 20px; }
     .main { padding: 20px 14px 60px; }
@@ -226,7 +226,7 @@
     /* 計算例フローの横スクロール */
     .overflow-x-scroll { overflow-x: auto; }
   }
-
+ 
   @media (max-width: 400px) {
     .toc-btn { font-size: 11px; padding: 10px 10px; }
     .step-num { width: 24px; height: 24px; font-size: 11px; }
@@ -234,7 +234,7 @@
 </style>
 </head>
 <body>
-
+ 
 <div class="header">
   <div class="header-inner">
     <div class="header-badge">🌸 EisaLife 公式マニュアル</div>
@@ -247,7 +247,7 @@
     </div>
   </div>
 </div>
-
+ 
 <nav class="toc">
   <div class="toc-inner">
     <div class="toc-row">
@@ -267,22 +267,22 @@
     </div>
   </div>
 </nav>
-
+ 
 <div class="main">
   <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:9%"></div></div>
-
+ 
   <!-- ① MetaMask 導入 -->
   <div class="section active" id="s1">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(246,133,27,0.12)">🦊</div>
       <div><h2>MetaMask の導入・初期設定</h2><p>PC版（ブラウザ拡張機能）またはスマホアプリ版を選択してください</p></div>
     </div>
-
+ 
     <div class="tab-bar">
       <button class="tab-btn active" onclick="switchTab('s1','pc',this)">💻 PC版（ブラウザ拡張機能）</button>
       <button class="tab-btn" onclick="switchTab('s1','sp',this)">📱 スマホアプリ版</button>
     </div>
-
+ 
     <!-- PC版 -->
     <div class="tab-content active" id="s1-pc">
       <div class="steps">
@@ -325,7 +325,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- スマホアプリ版 -->
     <div class="tab-content" id="s1-sp">
       <div class="steps">
@@ -381,15 +381,15 @@
       </div>
     </div>
   </div>
-
-
+ 
+ 
     <!-- ② CEX → 入金ルート -->
   <div class="section" id="s2">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(16,185,129,0.12)">🏦</div>
       <div><h2>CEX → MetaMask 入金ルート</h2><p>OKJ / Binance Japan / bitbank からの推奨出金経路</p></div>
     </div>
-
+ 
     <!-- チェーン選択ガイド -->
     <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:20px;">
       <p style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:12px;">⚡ まず運用原資に応じたチェーンを選択してください</p>
@@ -409,12 +409,12 @@
         ⚠️ <strong style="color:#f59e0b;">ランニングコストに注意：</strong>ERC20（Ethereum）はガス代が高く、$5,000未満の運用では手数料収益がガス代に圧迫される可能性があります。少額運用はBASEチェーンを推奨します。
       </div>
     </div>
-
+ 
     <div class="box info" style="margin-bottom:20px;">
       <div class="box-icon">ℹ️</div>
       <p><strong>なぜ Arbitrum One 経由が推奨なのか（ERC20の場合）：</strong>ERC20（Ethereum メインネット）への直接出金は取引所手数料が高い傾向があります。一方、Arbitrum One ネットワークは手数料が安く、その後ブリッジでEthereum メインネットに移動できます。</p>
     </div>
-
+ 
     <div class="cex-grid">
       <div class="cex-card">
         <h4>OKJ <span class="cex-badge badge-arb">Arbitrum One 対応</span></h4>
@@ -441,7 +441,7 @@
         </div>
       </div>
     </div>
-
+ 
     <div style="margin-top:24px;">
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">📌 推奨フロー（全CEX共通）</p>
       <div class="flow">
@@ -456,20 +456,20 @@
         <div class="flow-node"><div class="flow-box highlight"><h5>⑤ MetaMask（Ethereum メインネット / ERC20）</h5><p>Uniswap 利用準備完了</p></div></div>
       </div>
     </div>
-
+ 
     <div class="box note" style="margin-top:16px;">
       <div class="box-icon">📝</div>
       <p>各CEXのArbitrum One 対応・出金手数料は変更される場合があります。出金前に各取引所の公式サイトで最新情報を必ず確認してください。</p>
     </div>
   </div>
-
+ 
   <!-- ③ ブリッジ手順 -->
   <div class="section" id="s3">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(59,130,246,0.12)">🌉</div>
       <div><h2>ブリッジ手順</h2><p>目的ネットワークと資金規模に応じたルートを選択してください</p></div>
     </div>
-
+ 
     <!-- ルート選択ガイド -->
     <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:20px;">
       <p style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:14px;">📌 3つのルートから状況に応じて選択</p>
@@ -497,14 +497,14 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- タブ切り替え -->
     <div class="tab-bar" id="bridge-tabs">
       <button class="tab-btn active" onclick="switchBridgeTab('bA',this)">ルートA｜Arb→ERC20</button>
       <button class="tab-btn" onclick="switchBridgeTab('bB',this)">ルートB｜Arb→BASE</button>
       <button class="tab-btn" onclick="switchBridgeTab('bC',this)">ルートC｜海外CEX経由</button>
     </div>
-
+ 
     <!-- ルートA -->
     <div id="bridge-bA" class="bridge-tab-content" style="display:block;">
       <div class="steps">
@@ -551,7 +551,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ルートB -->
     <div id="bridge-bB" class="bridge-tab-content" style="display:none;">
       <div class="box info" style="margin-bottom:16px;">
@@ -597,7 +597,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ルートC -->
     <div id="bridge-bC" class="bridge-tab-content" style="display:none;">
       <div class="box note" style="margin-bottom:16px;">
@@ -633,7 +633,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- 各ルートの比較 -->
       <div style="margin-top:20px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">ルート別 比較まとめ</p>
@@ -648,7 +648,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ④ ネットワーク設定 -->
   <div class="section" id="s4">
     <div class="section-header">
@@ -665,24 +665,24 @@
     </table>
     <div class="box tip" style="margin-top:16px;"><div class="box-icon">💡</div><p>ネットワーク追加は <code>chainlist.org</code> から行うと手動入力のミスを防げます。MetaMask を接続して対象ネットワークを検索し「Add to MetaMask」をクリックするだけです。</p></div>
   </div>
-
+ 
   <!-- ⑤ EisaLife 登録手順 -->
   <div class="section" id="s5">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(255,100,150,0.12)">🌸</div>
       <div><h2>EisaLife 登録・運用開始手順</h2><p>接続から流動性提供の開始まで4ステップ</p></div>
     </div>
-
+ 
     <div class="box info" style="margin-bottom:20px;">
       <div class="box-icon">ℹ️</div>
       <p>EisaLifeへの接続はMetaMaskのアプリ内ブラウザ（DApps機能）から行います。事前にMetaMaskへのETH入金と、Uniswapで必要なトークンへのスワップを済ませておきましょう。</p>
     </div>
-
+ 
     <!-- フェーズ区切り -->
     <p style="font-size:11px;font-weight:700;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">— 運用前段階 —</p>
-
+ 
     <div class="steps">
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num">1</div><div class="step-title">MetaMask DApps から EisaLife に接続する</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -716,7 +716,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num">2</div><div class="step-title">ウォレットを接続する</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -733,14 +733,14 @@
           </div>
         </div>
       </div>
-
+ 
     </div>
-
+ 
     <!-- フェーズ区切り -->
     <p style="font-size:11px;font-weight:700;color:var(--text-muted);letter-spacing:0.1em;text-transform:uppercase;margin:24px 0 12px;">— 流動性提供の手順 —</p>
-
+ 
     <div class="steps">
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num">3</div><div class="step-title">スマートコントラクトを作成する（初回のみ）</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -760,7 +760,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num">4</div><div class="step-title">ポジションを作成して流動性提供を開始する</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -779,9 +779,9 @@
           </div>
         </div>
       </div>
-
+ 
     </div>
-
+ 
     <!-- 全体フロー -->
     <div style="margin-top:24px;">
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">📌 全体フロー</p>
@@ -796,7 +796,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- ⑦ セキュリティ -->
   <div class="section" id="s6b">
     <div class="section-header">
@@ -813,14 +813,14 @@
       <div class="sec-item"><div><span class="sec-badge badge-med">MED</span></div><div class="sec-content"><h4>取引後は MetaMask の接続を解除する</h4><p>DEX・ブリッジ利用後は「接続済みサイト」から接続を解除するか MetaMask をロックする習慣をつけましょう。</p></div></div>
     </div>
   </div>
-
+ 
   <!-- ⑦ BIZ設計 -->
   <div class="section" id="s7">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(255,100,150,0.12)">💼</div>
       <div><h2>EisaLife ビジネス設計</h2><p>Uniswap を活用した集中型流動性提供サービス</p></div>
     </div>
-
+ 
     <!-- 課題 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">従来の資産管理の課題</p>
@@ -833,7 +833,7 @@
         <div style="background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.2);border-radius:9px;padding:12px 14px;font-size:13px;color:var(--text-dim);">⚠️ 運用の透明性が低いサービスによる資産管理リスク</div>
       </div>
     </div>
-
+ 
     <!-- 金融の進化 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">インフレ時代における選択肢 — 金融の進化</p>
@@ -859,7 +859,7 @@
         💡 成長期待のある仮想通貨（ETH）と、法定通貨のUSDに裏付けられたステーブルコイン（USDT/USDC）を <strong>1:1 の価値で流動性提供</strong>することで、インフレの脅威に対する資産構成を実現します。
       </div>
     </div>
-
+ 
     <!-- サービス概要 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">流動性提供とは？— EisaLife のビジネスモデル</p>
@@ -884,7 +884,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- 集中型 vs 従来 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">集中型流動性提供 vs 従来の流動性提供</p>
@@ -912,7 +912,7 @@
         集中型流動性提供では、流動性ボリュームをすべての価格帯に分散するのではなく、<strong style="color:var(--text);">特定の価格範囲に集中して配置</strong>します。実際に取引されている価格帯で優先的にプールが使用され、同じ資金でもより多くの取引手数料を獲得できます。
       </div>
     </div>
-
+ 
     <!-- スマートコントラクトによる自動化 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">スマートコントラクトによる自動流動性提供 — 6つの特徴</p>
@@ -943,7 +943,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ウォレットコネクトによる自己管理 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">ウォレットコネクトによる自己管理</p>
@@ -962,16 +962,16 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- IL対策 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">インパーマネントロス（IL）リスク戦略</p>
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:14px;">
         <p style="font-size:13px;color:var(--text-dim);line-height:1.8;">EisaLifeでは集中型流動性提供により高い資本効率を実現する一方、価格が大きく変動した場合には<strong style="color:var(--text);">インパーマネントロス（IL）</strong>が発生する可能性があります。これに対し、<strong style="color:#f472b6;">AI・オンチェーン分析・テクニカル指標</strong>を組み合わせた2つのリスク戦略を採用しています。</p>
       </div>
-
+ 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-
+ 
         <!-- 戦略① -->
         <div style="background:var(--surface);border:1px solid rgba(244,114,182,0.3);border-radius:12px;padding:18px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
@@ -995,7 +995,7 @@
           </div>
           <div style="margin-top:10px;font-size:11px;color:var(--text-muted);background:rgba(244,114,182,0.06);border-radius:6px;padding:7px 10px;">通常LPの「上限+10%・下限-10%」の対称レンジとは異なり、相場方向に合わせた非対称配置を行います。</div>
         </div>
-
+ 
         <!-- 戦略② -->
         <div style="background:var(--surface);border:1px solid rgba(59,130,246,0.3);border-radius:12px;padding:18px;">
           <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
@@ -1019,10 +1019,10 @@
           </div>
           <div style="margin-top:10px;font-size:11px;color:var(--text-muted);background:rgba(59,130,246,0.06);border-radius:6px;padding:7px 10px;">取引量が多い価格帯・サポート/レジスタンス・ボラティリティを分析して効率的に配置します。</div>
         </div>
-
+ 
       </div>
     </div>
-
+ 
     <!-- 流動性ボリューム・報酬プラン -->
     <div>
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">選べる流動性ボリューム・報酬プラン</p>
@@ -1046,14 +1046,14 @@
       <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">※ 流動性ボリュームの報酬パーセントは、手数料収益に対して発生いたします。</p>
     </div>
   </div>
-
+ 
   <!-- ⑧ 運用者向けマニュアル -->
   <div class="section" id="s8">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(16,185,129,0.12)">⚙️</div>
       <div><h2>運用者向けマニュアル</h2><p>EisaLife 運用中のダッシュボード操作・収益確認・ポジション管理</p></div>
     </div>
-
+ 
     <!-- 全体ナビ -->
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:28px;">
       <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.25);border-radius:10px;padding:14px 16px;cursor:pointer;" onclick="document.getElementById('op-s1').scrollIntoView({behavior:'smooth'})">
@@ -1077,19 +1077,19 @@
         <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">元本・手数料の回収手順</div>
       </div>
     </div>
-
+ 
     <!-- ① 運用状況の確認 -->
     <div id="op-s1" style="margin-bottom:32px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);">
         <span style="background:rgba(16,185,129,0.12);color:#10b981;font-size:18px;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">📊</span>
         <div><h3 style="font-size:15px;font-weight:700;">① 運用状況の確認方法</h3><p style="font-size:12px;color:var(--text-muted);">ダッシュボードから現在の流動性・稼働状況を把握する</p></div>
       </div>
-
+ 
       <!-- ダッシュボード構成図 -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:16px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">ダッシュボード画面の構成</p>
         <div style="display:flex;flex-direction:column;gap:10px;">
-
+ 
           <!-- アカウントエリア -->
           <div style="background:rgba(244,114,182,0.06);border:1px solid rgba(244,114,182,0.2);border-radius:9px;padding:12px 16px;">
             <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
@@ -1103,7 +1103,7 @@
               <div style="display:flex;gap:6px;align-items:flex-start;"><span style="color:#f472b6;flex-shrink:0;">•</span><span><strong style="color:var(--text);">ウォレット資産</strong> — USDT / USDC など保有トークン一覧</span></div>
             </div>
           </div>
-
+ 
           <!-- 流動性アカウントエリア -->
           <div style="background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.2);border-radius:9px;padding:12px 16px;">
             <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
@@ -1120,10 +1120,10 @@
               <div style="display:flex;gap:6px;align-items:flex-start;"><span style="color:#10b981;flex-shrink:0;">•</span><span><strong style="color:var(--text);">「ポジションの作成」</strong> — 新しいポジションを追加する際に使用</span></div>
             </div>
           </div>
-
+ 
         </div>
       </div>
-
+ 
       <div class="steps">
         <div class="step" onclick="toggleStep(this)">
           <div class="step-head"><div class="step-num">1</div><div class="step-title">ダッシュボードへのアクセス手順</div><div class="step-chevron">▼</div></div>
@@ -1166,7 +1166,7 @@
                 </div>
                 <div style="display:flex;gap:8px;align-items:flex-start;">
                   <span style="background:rgba(245,158,11,0.15);color:#f59e0b;padding:1px 7px;border-radius:4px;font-weight:700;flex-shrink:0;font-family:var(--mono);">手数料</span>
-                  <span style="color:var(--text-dim);">未回収の手数料 — 現在未回収の手数料収益（USDC / WETH）。毎日24時に自動回収されます。</span>
+                  <span style="color:var(--text-dim);">未回収の手数料 — 現在未回収の手数料収益（USDC / WETH）。定期的に自動回収されます（回収間隔はチェーンによって異なります）。</span>
                 </div>
               </div>
             </div>
@@ -1186,20 +1186,20 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ② 収益確認・報酬計算 -->
     <div id="op-s2" style="margin-bottom:32px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);">
         <span style="background:rgba(59,130,246,0.12);color:#60a5fa;font-size:18px;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">💰</span>
         <div><h3 style="font-size:15px;font-weight:700;">② 収益の確認と報酬の計算方法</h3><p style="font-size:12px;color:var(--text-muted);">手数料収益の確認・自動回収の仕組み・実際の受取報酬の計算</p></div>
       </div>
-
+ 
       <!-- 重要注意 -->
       <div class="box warn" style="margin-bottom:16px;">
         <div class="box-icon">⚠️</div>
         <p><strong>「獲得手数料」＝受取報酬ではありません。</strong>画面に表示される獲得手数料（未回収手数料）は自動回収時にプランの報酬率で差し引かれた後の金額がMetaMaskに振り込まれます。事前に計算式で実際の受取額を把握しておきましょう。</p>
       </div>
-
+ 
       <!-- ポジション画面の収益表示 -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:16px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:14px;letter-spacing:0.05em;text-transform:uppercase;">「私のポジション」画面の収益項目</p>
@@ -1216,13 +1216,13 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- 自動回収の仕組み -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px 20px;margin-bottom:16px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">自動回収の仕組み</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
           <div style="display:flex;gap:12px;background:var(--surface2);border-radius:8px;padding:11px 14px;font-size:13px;color:var(--text-dim);">
-            <span style="color:#f472b6;font-weight:700;flex-shrink:0;">毎日24時</span>未回収の手数料が自動的に引き出されます
+            <span style="color:#f472b6;font-weight:700;flex-shrink:0;">定期自動回収</span>未回収の手数料が自動的に引き出されます（間隔はチェーンにより異なる）
           </div>
           <div style="display:flex;gap:12px;background:var(--surface2);border-radius:8px;padding:11px 14px;font-size:13px;color:var(--text-dim);">
             <span style="color:#f472b6;font-weight:700;flex-shrink:0;">差し引き</span>プランの報酬率に基づき差し引きが行われます
@@ -1232,7 +1232,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- 報酬計算式 -->
       <div class="steps">
         <div class="step" onclick="toggleStep(this)">
@@ -1265,19 +1265,37 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ③ 任意での利息回収 -->
     <div id="op-s3" style="margin-bottom:32px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);">
         <span style="background:rgba(245,158,11,0.12);color:#f59e0b;font-size:18px;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">🔄</span>
         <div><h3 style="font-size:15px;font-weight:700;">③ 任意での利息回収方法</h3><p style="font-size:12px;color:var(--text-muted);">自動回収とは別に、手動で手数料収益を回収する手順</p></div>
       </div>
-
+ 
       <div class="box info" style="margin-bottom:12px;">
         <div class="box-icon">ℹ️</div>
-        <p>利息（手数料収益）は毎日24時に<strong>自動回収</strong>されMetaMaskに振り込まれます。自動複利の仕組みはなく、<strong>LP組成時の金額が固定</strong>されます。任意のタイミングで手動回収も可能で、いずれの場合もポジション（元本）はそのまま継続されます。</p>
+        <p>利息（手数料収益）は定期的に<strong>自動回収</strong>されMetaMaskに振り込まれます。自動複利の仕組みはなく、<strong>LP組成時の金額が固定</strong>されます。任意のタイミングで手動回収も可能で、いずれの場合もポジション（元本）はそのまま継続されます。</p>
+ 
+      <!-- チェーン別回収間隔 -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:10px;margin-bottom:4px;">
+        <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:10px;">⏱️ チェーン別・自動回収の間隔</p>
+        <div style="display:flex;flex-direction:column;gap:7px;">
+          <div style="display:flex;gap:10px;align-items:flex-start;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.2);border-radius:7px;padding:9px 12px;font-size:12px;">
+            <span style="color:#10b981;font-weight:700;flex-shrink:0;">BASE</span>
+            <span style="color:var(--text-muted);">ガス代が安いため、毎日回収が実行されます。</span>
+          </div>
+          <div style="display:flex;gap:10px;align-items:flex-start;background:rgba(59,130,246,0.07);border:1px solid rgba(59,130,246,0.2);border-radius:7px;padding:9px 12px;font-size:12px;">
+            <span style="color:#60a5fa;font-weight:700;flex-shrink:0;">ERC20</span>
+            <span style="color:var(--text-muted);">ガス代のランニングコストを考慮し、<strong style="color:var(--text);">2〜3日に1回</strong>の間隔で回収が実行されます。手数料収益の総額は変わらず、回収タイミングが調整されるだけです。</span>
+          </div>
+        </div>
+        <div style="margin-top:10px;font-size:11px;color:var(--text-muted);background:var(--surface2);border-radius:6px;padding:7px 10px;">
+          📌 $5,000未満でERC20をご利用中の方（サービス開始当初からのユーザー）も同様に2〜3日間隔での回収となります。収益の絶対値に変化はありません。
+        </div>
       </div>
-
+      </div>
+ 
       <!-- 増資・運用額を増やしたい場合 -->
       <div style="background:rgba(59,130,246,0.07);border:1px solid rgba(59,130,246,0.25);border-radius:10px;padding:14px 16px;margin-bottom:16px;">
         <p style="font-size:13px;font-weight:700;color:#60a5fa;margin-bottom:10px;">💡 運用額を増やしたい場合の2つの方法</p>
@@ -1292,7 +1310,7 @@
           </div>
         </div>
       </div>
-
+ 
       <!-- 操作ボタンの場所 -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:16px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">操作ボタンの場所</p>
@@ -1312,7 +1330,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="steps">
         <div class="step" onclick="toggleStep(this)">
           <div class="step-head"><div class="step-num">1</div><div class="step-title">手数料回収の手順</div><div class="step-chevron">▼</div></div>
@@ -1337,7 +1355,7 @@
               <div class="sub-step">各トランザクションのオンチェーンデータ（ブロックエクスプローラー）も確認可能</div>
             </div>
             <div class="box tip"><div class="box-icon">💡</div><p>報酬の実績確認や税務処理の際はこの取引履歴を活用してください。オンチェーン上のデータなので改ざん不可能な正確な記録が確認できます。</p></div>
-
+ 
             <!-- リバランス時の取引履歴について -->
             <div class="box warn" style="margin-top:12px;">
               <div class="box-icon">⚠️</div>
@@ -1361,19 +1379,19 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ④ LPポジション解消 -->
     <div id="op-s4" style="margin-bottom:16px;">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);">
         <span style="background:rgba(239,68,68,0.12);color:#f87171;font-size:18px;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">🚪</span>
         <div><h3 style="font-size:15px;font-weight:700;">④ LPポジション解消方法</h3><p style="font-size:12px;color:var(--text-muted);">元本＋手数料を回収してポジションを終了する手順</p></div>
       </div>
-
+ 
       <div class="box warn" style="margin-bottom:16px;">
         <div class="box-icon">⚠️</div>
         <p>ポジション解消後は流動性提供が停止されます。再度運用を開始する場合は新たにポジションを作成する必要があります。<strong>ロック期間・解約ペナルティは一切ありません。</strong></p>
       </div>
-
+ 
       <!-- 操作ボタンの場所 -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:16px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">操作ボタンの場所（③と同じ画面）</p>
@@ -1393,7 +1411,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="steps">
         <div class="step" onclick="toggleStep(this)">
           <div class="step-head"><div class="step-num">1</div><div class="step-title">ポジション解消（元本＋手数料の回収）手順</div><div class="step-chevron">▼</div></div>
@@ -1408,7 +1426,7 @@
             <div class="box note" style="margin-top:10px;"><div class="box-icon">📝</div><p>返還時のトークン比率（USDC / WETH）は解消時点の価格レンジ位置によって変動します。預け入れ時と比率が異なる場合がありますが、これはインパーマネントロスによる正常な変動です。</p></div>
           </div>
         </div>
-
+ 
         <div class="step" onclick="toggleStep(this)">
           <div class="step-head"><div class="step-num">2</div><div class="step-title">解消後に再運用する場合</div><div class="step-chevron">▼</div></div>
           <div class="step-body">
@@ -1422,7 +1440,7 @@
             <div class="box tip"><div class="box-icon">💡</div><p>スマートコントラクト作成の 0.008 ETH 手数料は初回のみです。2回目以降のポジション作成ではかかりません。</p></div>
           </div>
         </div>
-
+ 
         <div class="step" onclick="toggleStep(this)">
           <div class="step-head"><div class="step-num">3</div><div class="step-title">手数料のみ回収してポジションを継続する場合</div><div class="step-chevron">▼</div></div>
           <div class="step-body">
@@ -1436,20 +1454,20 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- ⑨ トラブル対応・FAQ -->
   <div class="section" id="s9">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(59,130,246,0.12)">❓</div>
       <div><h2>トラブルシューティング・よくある質問</h2><p>EisaLife 公式FAQをもとにまとめています</p></div>
     </div>
-
+ 
     <p style="font-size:13px;color:var(--text-muted);margin-bottom:20px;">インパーマネントロスへのリスク戦略・セキュリティ対策・スマートコントラクトの性質など、よく寄せられる質問にお答えします。</p>
-
+ 
     <div class="steps">
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q1</div><div class="step-title">資金はどこに保管されますか？他のお客様と混ざることはありますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1457,7 +1475,7 @@
           <div class="box tip"><div class="box-icon">🔒</div><p>資産は<strong>お客様専用の流動性アカウント（スマートコントラクト）</strong>に保管されます。コントラクトがお客様専用の金庫をチェーン上に作成するため、他のユーザーや運営側の資金と混ざることは物理的にありません。</p></div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q2</div><div class="step-title">運営側が私の資産を勝手に引き出すことはできますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1465,7 +1483,7 @@
           <div class="box info"><div class="box-icon">ℹ️</div><p>EisaLifeは「流動性を提供する指示」を出す権限しか持っておらず、<strong>資産を外部へ送金する権限は一切持っていません。</strong></p></div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q3</div><div class="step-title">利用するには何が必要ですか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1475,35 +1493,35 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q4</div><div class="step-title">流動性ボリュームとは何ですか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
           <p>希望する流動性提供のボリュームを選択できます。スマートコントラクトによってペアが作成され、流動性提供が開始されます。</p>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q5</div><div class="step-title">受け取る報酬は何ですか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
           <p>流動性提供された通貨ペアで報酬を受け取ることができます。報酬は直接ウォレットに反映されるため、安心して流動性提供を行っていただけます。</p>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q6</div><div class="step-title">複雑な操作は必要ですか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
           <p>いいえ。ウォレット接続と流動性ボリューム選択のみで利用できます。必要な処理はスマートコントラクトで自動実行されます。</p>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q7</div><div class="step-title">流動性ボリュームはどのように管理されますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
           <p>EisaLifeのロジックに基づき、必要に応じて自動的に調整（リバランス）されます。AI・オンチェーン分析・テクニカル指標によるインパーマネントロスのリスク戦略を採用しています。</p>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q8</div><div class="step-title">インパーマネントロスの対策はされていますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1515,7 +1533,7 @@
           <div class="box tip"><div class="box-icon">💡</div><p>IL対策の詳細はBIZ設計セクションに掲載しています。</p></div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q9</div><div class="step-title">途中で流動性を解除できますか？ペナルティやロック期間はありますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1523,14 +1541,14 @@
           <div class="box tip"><div class="box-icon">✅</div><p><strong>ロック期間・解約ペナルティは一切ありません。</strong></p></div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q10</div><div class="step-title">手数料はどのように計算されますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
           <p>お客様の流動性ボリュームに応じた手数料を採用しています。流動性ボリュームが多いほど受け取れる手数料収益が高くなる仕組みです。</p>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q11</div><div class="step-title">取り扱われる通貨は何種類ありますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1541,7 +1559,7 @@
           <div class="box info"><div class="box-icon">ℹ️</div><p>リスクの高い流動性提供を避け、インパーマネントロスのリスクを削減するための措置です。</p></div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q12</div><div class="step-title">操作履歴はどこで確認できますか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1551,7 +1569,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div class="step" onclick="toggleStep(this)">
         <div class="step-head"><div class="step-num" style="font-size:10px;">Q13</div><div class="step-title">セキュリティは安全ですか？</div><div class="step-chevron">▼</div></div>
         <div class="step-body">
@@ -1563,17 +1581,17 @@
           </div>
         </div>
       </div>
-
+ 
     </div>
   </div>
-
+ 
   <!-- ⑩ マーケティング -->
   <div class="section" id="s10">
     <div class="section-header">
       <div class="section-icon" style="background:rgba(244,114,182,0.12)">📣</div>
       <div><h2>マーケティング担当者向け</h2><p>紹介報酬制度・タイトルボーナスの解説</p></div>
     </div>
-
+ 
     <!-- タイトルボーナス -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">タイトルボーナス</p>
@@ -1594,13 +1612,13 @@
       </table>
       <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">※ 流動性ボリュームのポジションを保有している状態が、アクティブアカウントとしてみなされます。</p>
     </div>
-
-
+ 
+ 
     <!-- V2〜V7 イメージ図 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">タイトル別チーム構成イメージ図</p>
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">各タイトルで必要なチーム構成を図で確認できます。</p>
-
+ 
       <!-- タブ -->
       <div style="display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap;">
         <button class="rank-tab-btn active" onclick="showRankTab('v1',this)" style="padding:7px 16px;border-radius:6px;border:1px solid #10b981;background:rgba(16,185,129,0.15);color:#10b981;font-family:var(--sans);font-size:13px;font-weight:700;cursor:pointer;">V1 入口</button>
@@ -1611,7 +1629,7 @@
         <button class="rank-tab-btn" onclick="showRankTab('v6',this)" style="padding:7px 16px;border-radius:6px;border:1px solid var(--border);background:none;color:var(--text-muted);font-family:var(--sans);font-size:13px;font-weight:700;cursor:pointer;">V6</button>
         <button class="rank-tab-btn" onclick="showRankTab('v7',this)" style="padding:7px 16px;border-radius:6px;border:1px solid var(--border);background:none;color:var(--text-muted);font-family:var(--sans);font-size:13px;font-weight:700;cursor:pointer;">V7</button>
       </div>
-
+ 
       <!-- 各ランク図 -->
       <div id="rank-diagram-v1" class="rank-diagram" style="display:block;">
         <div style="background:var(--surface);border:1px solid rgba(16,185,129,0.3);border-radius:12px;padding:20px;">
@@ -1655,7 +1673,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v2" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1701,7 +1719,7 @@
           </div>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v3" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1740,7 +1758,7 @@
           </svg>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v4" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1779,7 +1797,7 @@
           </svg>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v5" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1825,7 +1843,7 @@
           </svg>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v6" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1871,7 +1889,7 @@
           </svg>
         </div>
       </div>
-
+ 
       <div id="rank-diagram-v7" class="rank-diagram" style="display:none;">
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;">
           <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px;">
@@ -1924,12 +1942,12 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- 差額＆同級ボーナス説明 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">紹介報酬 — 差額ボーナス＆同級ボーナスの仕組み</p>
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:14px;">チーム全体の流動性提供やランク構造に応じて付与される追加報酬制度です。</p>
-
+ 
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
         <div style="background:rgba(239,68,68,0.07);border:1px solid rgba(239,68,68,0.2);border-radius:10px;padding:16px;">
           <div style="font-size:13px;font-weight:700;color:#f87171;margin-bottom:8px;">🔴 差額ボーナス</div>
@@ -1940,7 +1958,7 @@
           <p style="font-size:12px;color:var(--text-muted);line-height:1.7;">同じタイトルランクの直近下位の<strong style="color:var(--text);">差額報酬の5%（一律）</strong>を受け取る仕組み。ランクに関係なく適用されますが、<strong style="color:#f87171;">同一ライン上で1回しか発生しません</strong>（既に同ランクが取得している場合は不可）。</p>
         </div>
       </div>
-
+ 
       <!-- $10,000計算例フロー -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;">
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:4px;">📊 報酬分配の計算例</p>
@@ -2026,13 +2044,13 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- ビジネスモデルの透明性 -->
     <div style="margin-bottom:28px;">
       <p style="font-size:13px;font-weight:600;color:var(--text-dim);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">ビジネスモデルの透明性</p>
-
+ 
       <div style="display:flex;flex-direction:column;gap:12px;">
-
+ 
         <!-- MLMである旨 -->
         <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 20px;">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
@@ -2041,7 +2059,7 @@
           </div>
           <p style="font-size:13px;color:var(--text-muted);line-height:1.8;">紹介による組織拡大に応じて差額ボーナス・同級ボーナス・タイトルボーナスが付与される報酬構造を持ちます。マーケティング担当者はこの仕組みを正確に理解した上で、誠実な情報提供を行ってください。</p>
         </div>
-
+ 
         <!-- 費用について -->
         <div style="background:var(--surface);border:1px solid rgba(16,185,129,0.25);border-radius:12px;padding:16px 20px;">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
@@ -2064,7 +2082,7 @@
             </div>
           </div>
         </div>
-
+ 
         <!-- 運営の収益モデル -->
         <div style="background:var(--surface);border:1px solid rgba(59,130,246,0.25);border-radius:12px;padding:16px 20px;">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
@@ -2077,10 +2095,10 @@
             <div style="color:var(--text-muted);">例（エントリー 40%）：手数料収益のうち40%がユーザーへ、残りが運営側の収益となります。</div>
           </div>
         </div>
-
+ 
       </div>
     </div>
-
+ 
     <!-- TBD部分 -->
     <div style="background:rgba(100,116,139,0.07);border:1px dashed rgba(100,116,139,0.3);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:12px;color:var(--text-muted);">
       📝 ターゲット設定・訴求メッセージ・コンテンツ戦略・KPIは確定次第追記予定です。
@@ -2120,7 +2138,7 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- 用語集 -->
   <div class="section" id="s11">
     <div class="section-header">
@@ -2145,13 +2163,13 @@
       <div class="glo-item"><h4>インパーマネントロス（IL）</h4><p>流動性プールに資産を預けた際、トークン価格の変動によって単純保有より資産価値が目減りする現象。価格変動が大きいペアほどリスクが高い。</p></div>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <script>
   const sections = ['s1','s2','s3','s4','s5','s6b','s7','s8','s9','s10','s11'];
   const progressVals = [9,18,27,36,45,55,64,73,82,91,100];
-
+ 
   function showSection(id, btn) {
     sections.forEach(s => document.getElementById(s).classList.remove('active'));
     document.querySelectorAll('.toc-btn').forEach(b => b.classList.remove('active'));
@@ -2161,14 +2179,14 @@
     document.getElementById('progressFill').style.width = progressVals[idx] + '%';
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
+ 
   function switchBridgeTab(tabId, btn) {
     document.querySelectorAll('.bridge-tab-content').forEach(t => t.style.display = 'none');
     document.querySelectorAll('#bridge-tabs .tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById('bridge-' + tabId).style.display = 'block';
     btn.classList.add('active');
   }
-
+ 
   function showRankTab(rankId, btn) {
     document.querySelectorAll('.rank-diagram').forEach(d => d.style.display = 'none');
     document.querySelectorAll('.rank-tab-btn').forEach(b => {
@@ -2181,7 +2199,7 @@
     btn.style.color = '#f472b6';
     btn.style.borderColor = '#f472b6';
   }
-
+ 
   function switchTab(sectionId, tabId, btn) {
     const section = document.getElementById(sectionId);
     section.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
@@ -2189,7 +2207,7 @@
     document.getElementById(sectionId + '-' + tabId).classList.add('active');
     btn.classList.add('active');
   }
-
+ 
   function toggleStep(el) { el.classList.toggle('open'); }
 </script>
 </body>
