@@ -1,3 +1,6 @@
+
+コピー
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -408,6 +411,9 @@
       <div style="margin-top:12px;background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.25);border-radius:8px;padding:10px 14px;font-size:12px;color:var(--text-muted);">
         ⚠️ <strong style="color:#f59e0b;">ランニングコストに注意：</strong>ERC20（Ethereum）はガス代が高く、$5,000未満の運用では手数料収益がガス代に圧迫される可能性があります。少額運用はBASEチェーンを推奨します。
       </div>
+      <div style="margin-top:10px;background:rgba(168,85,247,0.07);border:1px solid rgba(168,85,247,0.25);border-radius:8px;padding:10px 14px;font-size:12px;color:var(--text-muted);">
+        🔜 <strong style="color:#a855f7;">近日追加予定：</strong>Optimism（OP）・Arbitrum（ARB）チェーンへの対応が予定されています。リリース詳細は発表され次第マニュアルに追記します。
+      </div>
     </div>
  
     <div class="box info" style="margin-bottom:20px;">
@@ -661,6 +667,8 @@
         <tr><td>Ethereum Mainnet</td><td><code>1</code></td><td><code>mainnet.infura.io/v3/...</code></td><td><code>ETH</code></td><td>EisaLife 運用（$5,000以上）</td></tr>
         <tr><td>Arbitrum One</td><td><code>42161</code></td><td><code>arb1.arbitrum.io/rpc</code></td><td><code>ETH</code></td><td>CEXからの受け取り・ERC20へのブリッジ元</td></tr>
         <tr style="background:rgba(16,185,129,0.04);"><td style="color:#10b981;font-weight:700;">BASE <span style="font-size:10px;background:rgba(16,185,129,0.15);padding:1px 6px;border-radius:4px;">$5,000未満 推奨</span></td><td><code>8453</code></td><td><code>mainnet.base.org</code></td><td><code>ETH</code></td><td>EisaLife 運用（$5,000未満・低ガス代）</td></tr>
+        <tr style="background:rgba(168,85,247,0.03);"><td style="color:#a855f7;font-weight:700;">Optimism (OP) <span style="font-size:10px;background:rgba(168,85,247,0.15);padding:1px 6px;border-radius:4px;">近日追加予定</span></td><td><code>10</code></td><td><code>mainnet.optimism.io</code></td><td><code>ETH</code></td><td>EisaLife 対応予定（リリース詳細未発表）</td></tr>
+        <tr style="background:rgba(59,130,246,0.03);"><td style="color:#60a5fa;font-weight:700;">Arbitrum One (ARB) <span style="font-size:10px;background:rgba(59,130,246,0.15);padding:1px 6px;border-radius:4px;">近日追加予定</span></td><td><code>42161</code></td><td><code>arb1.arbitrum.io/rpc</code></td><td><code>ETH</code></td><td>EisaLife 対応予定（リリース詳細未発表）</td></tr>
       </tbody>
     </table>
     <div class="box tip" style="margin-top:16px;"><div class="box-icon">💡</div><p>ネットワーク追加は <code>chainlist.org</code> から行うと手動入力のミスを防げます。MetaMask を接続して対象ネットワークを検索し「Add to MetaMask」をクリックするだけです。</p></div>
@@ -1044,6 +1052,18 @@
         </tbody>
       </table>
       <p style="font-size:12px;color:var(--text-muted);margin-top:10px;">※ 流動性ボリュームの報酬パーセントは、手数料収益に対して発生いたします。</p>
+ 
+      <!-- 法人向けプラン -->
+      <div style="margin-top:20px;background:linear-gradient(135deg,rgba(168,85,247,0.08),rgba(59,130,246,0.08));border:1px solid rgba(168,85,247,0.3);border-radius:12px;padding:20px 22px;">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+          <span style="font-size:20px;">🏢</span>
+          <h4 style="font-size:15px;font-weight:700;color:#a855f7;">法人向けプラン</h4>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);line-height:1.8;margin-bottom:14px;">EisaLifeでは個人向けプランに加え、法人のお客様向けの専用プランをご用意しています。詳細についてはお問い合わせください。</p>
+        <div style="background:rgba(168,85,247,0.07);border:1px dashed rgba(168,85,247,0.3);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--text-dim);text-align:center;">
+          法人向けプランの詳細・ご相談は<strong style="color:#a855f7;">公式サポートまでお問い合わせください</strong>
+        </div>
+      </div>
     </div>
   </div>
  
@@ -1166,7 +1186,7 @@
                 </div>
                 <div style="display:flex;gap:8px;align-items:flex-start;">
                   <span style="background:rgba(245,158,11,0.15);color:#f59e0b;padding:1px 7px;border-radius:4px;font-weight:700;flex-shrink:0;font-family:var(--mono);">手数料</span>
-                  <span style="color:var(--text-dim);">未回収の手数料 — 現在未回収の手数料収益（USDC / WETH）。定期的に自動回収されます（回収間隔はチェーンによって異なります）。</span>
+                  <span style="color:var(--text-dim);">未回収の手数料 — 現在未回収の手数料収益（USDC / WETH）。<strong style="color:#f59e0b;">$5以上になった翌AM1:00</strong>に自動回収されます。$5未満の場合は回収されません。</span>
                 </div>
               </div>
             </div>
@@ -1222,7 +1242,7 @@
         <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:12px;letter-spacing:0.05em;text-transform:uppercase;">自動回収の仕組み</p>
         <div style="display:flex;flex-direction:column;gap:8px;">
           <div style="display:flex;gap:12px;background:var(--surface2);border-radius:8px;padding:11px 14px;font-size:13px;color:var(--text-dim);">
-            <span style="color:#f472b6;font-weight:700;flex-shrink:0;">定期自動回収</span>未回収の手数料が自動的に引き出されます（間隔はチェーンにより異なる）
+            <span style="color:#f472b6;font-weight:700;flex-shrink:0;">自動回収条件達成時</span>$5を超えた翌AM1:00に自動的に引き出されます
           </div>
           <div style="display:flex;gap:12px;background:var(--surface2);border-radius:8px;padding:11px 14px;font-size:13px;color:var(--text-dim);">
             <span style="color:#f472b6;font-weight:700;flex-shrink:0;">差し引き</span>プランの報酬率に基づき差し引きが行われます
@@ -1279,19 +1299,29 @@
  
       <!-- チェーン別回収間隔 -->
       <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-top:10px;margin-bottom:4px;">
-        <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:10px;">⏱️ チェーン別・自動回収の間隔</p>
+        <p style="font-size:12px;font-weight:600;color:var(--text-dim);margin-bottom:10px;">⏱️ 自動回収の条件とチェーン別間隔</p>
+ 
+        <!-- 回収条件 -->
+        <div style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.3);border-radius:8px;padding:10px 14px;margin-bottom:10px;">
+          <div style="font-size:12px;font-weight:700;color:#f59e0b;margin-bottom:6px;">📌 回収の条件</div>
+          <div style="display:flex;flex-direction:column;gap:5px;font-size:12px;color:var(--text-muted);">
+            <div style="display:flex;gap:8px;"><span style="color:#ef4444;flex-shrink:0;">✗</span><span>未回収手数料が <strong style="color:var(--text);">$5未満</strong> の場合 → 回収されません</span></div>
+            <div style="display:flex;gap:8px;"><span style="color:#10b981;flex-shrink:0;">✓</span><span>未回収手数料が <strong style="color:var(--text);">$5を超えた翌AM1:00</strong> に自動回収が実行されます</span></div>
+          </div>
+        </div>
+ 
         <div style="display:flex;flex-direction:column;gap:7px;">
           <div style="display:flex;gap:10px;align-items:flex-start;background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.2);border-radius:7px;padding:9px 12px;font-size:12px;">
             <span style="color:#10b981;font-weight:700;flex-shrink:0;">BASE</span>
-            <span style="color:var(--text-muted);">ガス代が安いため、毎日回収が実行されます。</span>
+            <span style="color:var(--text-muted);">ガス代が安いため$5を超えやすく、回収頻度が高い傾向があります。</span>
           </div>
           <div style="display:flex;gap:10px;align-items:flex-start;background:rgba(59,130,246,0.07);border:1px solid rgba(59,130,246,0.2);border-radius:7px;padding:9px 12px;font-size:12px;">
             <span style="color:#60a5fa;font-weight:700;flex-shrink:0;">ERC20</span>
-            <span style="color:var(--text-muted);">ガス代のランニングコストを考慮し、<strong style="color:var(--text);">2〜3日に1回</strong>の間隔で回収が実行されます。手数料収益の総額は変わらず、回収タイミングが調整されるだけです。</span>
+            <span style="color:var(--text-muted);">ガス代のランニングコストを考慮し、<strong style="color:var(--text);">2〜3日に1回</strong>のペースで$5を超えるタイミングで回収が実行されます。手数料収益の総額は変わらず、回収タイミングが調整されるだけです。</span>
           </div>
         </div>
         <div style="margin-top:10px;font-size:11px;color:var(--text-muted);background:var(--surface2);border-radius:6px;padding:7px 10px;">
-          📌 $5,000未満でERC20をご利用中の方（サービス開始当初からのユーザー）も同様に2〜3日間隔での回収となります。収益の絶対値に変化はありません。
+          📌 $5,000未満でERC20をご利用中の方（サービス開始当初からのユーザー）も同様です。収益の絶対値に変化はありません。
         </div>
       </div>
       </div>
